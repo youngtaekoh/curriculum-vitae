@@ -49,9 +49,8 @@
 \definecolor{LinkColour}{HTML}{23223e}
 
 % If you're not a researcher nor an academic, you probably don't need biblatex; delete this line.
-%\RequirePackage[backend=biber,bibstyle=apa,sorting=ymdnt,uniquename=init,maxnames=99,defernumbers=true]{biblatex}
-\usepackage[style=apa, apamaxprtauth=9,sorting=ymdnt]{biblatex}
-% \DeclareLanguageMapping{british}{british-apa}
+\RequirePackage[backend=biber,bibstyle=ieee,sorting=ymdnt,uniquename=init,maxnames=99,defernumbers=true]{biblatex}
+% \usepackage[style=apa, apamaxprtauth=9,sorting=ymdnt]{biblatex}
 
 %% Added 17 Jan 2018 from https://tex.stackexchange.com/a/140641/226 and https://tex.stackexchange.com/a/46879/226
 \DeclareSortingScheme{ymdnt}{
@@ -94,7 +93,8 @@
 
 \newcounter{bibitem}
 \AtBeginBibliography{\setcounter{bibitem}{1}}
-\AtEveryBibitem{\makebox[2.5em][l]{\circled{\thebibitem}\stepcounter{bibitem}}}
+% NOTE: Below creates the circled numbers in the bibliography [Not suitable for IEEE style]
+% \AtEveryBibitem{\makebox[2.5em][l]{\circled{\thebibitem}\stepcounter{bibitem}}}
 % \renewcommand{\bibfont}{\small}
 \setlength{\bibitemsep}{1.5ex}
 \setlength{\bibhang}{2.7em}

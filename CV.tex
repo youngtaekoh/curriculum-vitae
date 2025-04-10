@@ -24,6 +24,8 @@
 \fi
 \usepackage{csquotes}
 
+\addbibresource{publications.bib}
+\addbibresource{patents.bib}
 \myname{Oh}{YoungTaek}
 
 % Change the colours if you want
@@ -34,8 +36,8 @@
 % \prefixmarker{$\diamond$}
 
 %% Photo is only shown if "fullonly" is included
-% \includecomment{fullonly}
-\excludecomment{fullonly}
+\includecomment{fullonly}
+% \excludecomment{fullonly}
 
 \thispagestyle{plain}
 
@@ -46,7 +48,7 @@
 
 
 \leftheader{%
-  {\LARGE\bfseries\sffamily Oh, YoungTaek (오영택)} \\
+  {\LARGE\bfseries\sffamily 오영택(Oh, YoungTaek)} \\
 
     \makefield{\faPhone}{\texttt{(+82)010-9661-5500}}
     \makefield{\faEnvelopeO}{\texttt{youngtaek.oh@gmail.com}}
@@ -58,7 +60,7 @@
 
 \rightheader{~}
 \begin{fullonly}
-\photo[r]{photo}
+\photo[r]{img/photo.jpg}
 \photoscale{0.13}
 \end{fullonly}
 
@@ -68,8 +70,29 @@
 \begin{document}
 \makeheaders[c]
 
-\makerubric{work_experience}
 \makerubric{education}
 
+\prefixmarker{\faPencil}
+\makerubric{work_experience}
+
+\input{publications}
+
+% \prefixmarker{}
+% \makerubric{patents}
+
+\prefixmarker{\faBook}
+\makerubric{other_publications}
+
+\prefixmarker{$\diamond$}
+\makerubric{awards}
+
+\prefixmarker{\faCommentingO}
+\makerubric{invited_talks}
+
+\prefixmarker{\faCoffee}
+\makerubric{mentorship}
+
+\prefixmarker{$\diamond$}
+\makerubric{skills}
 
 \end{document}
