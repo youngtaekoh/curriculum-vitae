@@ -1,0 +1,39 @@
+\NeedsTeXFormat{LaTeX2e}
+
+\documentclass[11pt,a4paper,skipsamekey,english]{curve}
+
+\usepackage{settings}
+
+% Change the fonts if you want
+\ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
+  \usepackage{fontspec}
+  %% Warning: EB Garamond contains no bold!! Substituting for Junicode Bold, but *may not look nice nor consistent*!!
+%   \setmainfont[Ligatures=TeX,SmallCapsFeatures={Letters=SmallCaps,LetterSpace=5},BoldFont=Junicode Bold]{EB Garamond}
+  \setmainfont[Ligatures=TeX,SmallCapsFeatures={Letters=SmallCaps,LetterSpace=5}]{KoPub Dotum}
+  \setsansfont[Ligatures=TeX]{KoPub Batang}
+  \setmonofont{Inconsolata}
+\else % If you're using pdfLaTeX or latex
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[tracking=smallcaps]{microtype}
+  \usepackage{fbb}
+  \usepackage[type1]{cabin}
+  \usepackage[varqu,varl]{zi4}
+  \usepackage{kotex}
+  \useosf  %% Comment out if you prefer lining figures rather than old style figures
+\fi
+\usepackage{csquotes}
+
+\myname{Oh}{YoungTaek}
+
+\title{Curriculum Vitae}
+%\subtitle{Ph.D in Computer Science \& Engineering}
+
+\begin{document}
+
+\maketitle
+
+\makerubric{education}
+
+
+\end{document}
