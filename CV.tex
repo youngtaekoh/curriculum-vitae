@@ -1,7 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 
 \documentclass[11pt,a4paper,skipsamekey,english]{curve}
-
 \usepackage{settings}
 
 % Change the fonts if you want
@@ -9,8 +8,9 @@
   \usepackage{fontspec}
   %% Warning: EB Garamond contains no bold!! Substituting for Junicode Bold, but *may not look nice nor consistent*!!
 %   \setmainfont[Ligatures=TeX,SmallCapsFeatures={Letters=SmallCaps,LetterSpace=5},BoldFont=Junicode Bold]{EB Garamond}
-  \setmainfont[Ligatures=TeX,SmallCapsFeatures={Letters=SmallCaps,LetterSpace=5}]{KoPub Dotum}
-  \setsansfont[Ligatures=TeX]{KoPub Batang}
+  %% Charis SIL's rather nice, actually.
+  \setmainfont[Ligatures=TeX,SmallCapsFeatures={Letters=SmallCaps,LetterSpace=5}]{Charis SIL}
+  \setsansfont[Ligatures=TeX]{Lato}
   \setmonofont{Inconsolata}
 \else % If you're using pdfLaTeX or latex
   \usepackage[utf8]{inputenc}
@@ -26,13 +26,49 @@
 
 \myname{Oh}{YoungTaek}
 
+% Change the colours if you want
+\definecolor{SwishLineColour}{HTML}{00008B}
+\definecolor{MarkerColour}{HTML}{1E90FF}
+
+% Change the item prefix marker if you want
+% \prefixmarker{$\diamond$}
+
+%% Photo is only shown if "fullonly" is included
+% \includecomment{fullonly}
+\excludecomment{fullonly}
+
+\thispagestyle{plain}
+
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\leftheader{%
+  {\LARGE\bfseries\sffamily Oh, YoungTaek (오영택)} \\
+
+    \makefield{\faPhone}{\texttt{(+82)010-9661-5500}}
+    \makefield{\faEnvelopeO}{\texttt{youngtaek.oh@gmail.com}}
+    \par
+    \makefield{\faGlobe}{\href{https://y2h.info/}{\nolinkurl{y2h.info}}}
+    \makefield{\faLinkedinSquare}{\href{https://www.linkedin.com/in/youngtaekoh}{\nolinkurl{youngtaekoh}}}
+    \makefield{\faGithub}{\href{https://github.com/youngtaekoh}{\nolinkurl{youngtaekoh}}}
+}
+
+\rightheader{~}
+\begin{fullonly}
+\photo[r]{photo}
+\photoscale{0.13}
+\end{fullonly}
+
 \title{Curriculum Vitae}
 %\subtitle{Ph.D in Computer Science \& Engineering}
 
 \begin{document}
+\makeheaders[c]
 
-\maketitle
-
+\makerubric{work_experience}
 \makerubric{education}
 
 

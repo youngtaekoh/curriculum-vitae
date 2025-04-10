@@ -1,0 +1,12 @@
+*.aux
+*.bbl
+*.bbl-SAVE-ERROR
+*.bcf
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.pdf
+*.run.xml
+*.synctex.gz
+comment.cut
