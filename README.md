@@ -1,6 +1,17 @@
 Curriculum Vitae
 ================
 
+Fonts
+-----
+- English
+  - [Charis SIL](https://fonts.google.com/specimen/Charis+SIL)
+  - [Lato](https://fonts.google.com/specimen/Lato)
+- Korean
+  - [KoPubWorld](https://www.kopus.org/biz-electronic-font2/)
+- Monospace
+  - D2Coding
+
+
 Compilation
 ------------
 
