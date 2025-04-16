@@ -1,7 +1,11 @@
+%!LW recipe=latexmk (lualatex)
+%!TEX root = CV
+%!TEX encoding = UTF-8 Unicode
 \NeedsTeXFormat{LaTeX2e}
 
 \documentclass[11pt,a4paper,skipsamekey,english]{curve}
 \usepackage{settings}
+\usepackage{kotex}
 
 % Change the fonts if you want
 \ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
@@ -11,7 +15,9 @@
   %% Charis SIL's rather nice, actually.
   \setmainfont[Ligatures=TeX,SmallCapsFeatures={Letters=SmallCaps,LetterSpace=5}]{Charis SIL}
   \setsansfont[Ligatures=TeX]{Lato}
-  \setmonofont{Inconsolata}
+  \setmonofont{D2Coding}
+  \setmainhangulfont{KoPubWorld Batang}
+  \setsanshangulfont{KoPubWorld Dotum}
 \else % If you're using pdfLaTeX or latex
   \usepackage[utf8]{inputenc}
   \usepackage[T1]{fontenc}
@@ -19,10 +25,11 @@
   \usepackage{fbb}
   \usepackage[type1]{cabin}
   \usepackage[varqu,varl]{zi4}
-  \usepackage{kotex}
+
   \useosf  %% Comment out if you prefer lining figures rather than old style figures
 \fi
 \usepackage{csquotes}
+
 
 \addbibresource{publications.bib}
 \addbibresource{patents.bib}
