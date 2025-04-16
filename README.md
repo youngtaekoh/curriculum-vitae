@@ -16,10 +16,17 @@ Compilation
 ------------
 
 ### HTML
-For html build, use the following command:
+<!-- For html build, use the following command:
 
 ```make4ht -u -l CV.tex "mathjax" -d html -b html_build```
 
 For cleaning up the build, use the following command:
 
-```make4ht -m clean CV.tex```
+```make4ht -m clean CV.tex``` -->
+run `build_html.sh`
+
+### LaTeX
+
+- VSCode의 `LaTeX Workshop`에서 실행 (Magic comment로 미리 입력해두었음)
+- Clean Up!
+  - `latexmk -c`
