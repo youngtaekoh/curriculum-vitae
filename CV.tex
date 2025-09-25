@@ -1,3 +1,6 @@
+%!LW recipe=latexmk (lualatex)
+%!TEX root = CV
+%!TEX encoding = UTF-8 Unicode
 \NeedsTeXFormat{LaTeX2e}
 
 % For html build, use the following command:
@@ -8,6 +11,7 @@
 
 \documentclass[11pt,a4paper,skipsamekey,english]{curve}
 \usepackage{settings}
+\usepackage{kotex}
 
 % Change the fonts if you want
 \ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
@@ -18,6 +22,9 @@
   \setmainfont[Ligatures=TeX,SmallCapsFeatures={Letters=SmallCaps,LetterSpace=5}]{Charis SIL}
   \setsansfont[Ligatures=TeX]{Lato}
   \setmonofont{Inconsolata}
+  \setmonofont{D2Coding}
+  \setmainhangulfont{KoPubWorld Batang}
+  \setsanshangulfont{KoPubWorld Dotum}
 \else % If you're using pdfLaTeX or latex
   \usepackage[utf8]{inputenc}
   \usepackage[T1]{fontenc}
@@ -29,6 +36,7 @@
   \useosf  %% Comment out if you prefer lining figures rather than old style figures
 \fi
 \usepackage{csquotes}
+
 
 \addbibresource{publications.bib}
 \addbibresource{patents.bib}
@@ -54,7 +62,7 @@
 
 
 \leftheader{%
-  {\LARGE\bfseries\sffamily YoungTaek Oh} \\
+    {\LARGE\bfseries\sffamily YoungTaek Oh} \\
 
     \makefield{\faPhone}{\texttt{(+82)010-9661-5500}}
     \makefield{\faEnvelopeO}{\texttt{youngtaek.oh@gmail.com}}
