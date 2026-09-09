@@ -1,0 +1,15 @@
+{
+  "name": "youngtaek-oh-cv",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:data": "node scripts/build-resume.mjs",
+    "build:pdf": "mkdir -p output && typst compile cv.typ output/cv.pdf",
+    "build:html": "npm run build:data && resumed render output/resume.json --theme jsonresume-theme-even --output output/cv.html",
+    "build": "npm run build:data && npm run build:pdf"
+  },
+  "devDependencies": {
+    "jsonresume-theme-even": "latest",
+    "resumed": "latest"
+  }
+}

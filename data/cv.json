@@ -1,0 +1,370 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "YoungTaek Oh",
+    "label": "Assistant Professor, Hoseo University",
+    "email": "ytoh@hoseo.edu",
+    "url": "https://y2h.info/",
+    "image": "/data/photo.jpg",
+    "location": {
+      "city": "Asan-si",
+      "region": "Chungcheongnam-do",
+      "countryCode": "KR",
+      "x-display": "Asan-si, Chungcheongnam-do, Republic of Korea"
+    },
+    "profiles": [
+      {
+        "network": "ORCID",
+        "username": "0009-0003-8954-0627",
+        "url": "https://orcid.org/0009-0003-8954-0627"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "Seoul National University",
+      "studyType": "Ph.D.",
+      "area": "Electrical Engineering and Computer Science",
+      "startDate": "2009-09",
+      "endDate": "2011-08",
+      "x-details": [
+        {
+          "label": "Advisor",
+          "text": "Prof. Myung-Soo Kim"
+        },
+        {
+          "label": "Thesis",
+          "text": "Efficient Point Projection to Freeform Geometric Models"
+        }
+      ]
+    },
+    {
+      "institution": "Seoul National University",
+      "studyType": "M.S.",
+      "area": "Electrical Engineering and Computer Science",
+      "startDate": "2007-03",
+      "endDate": "2009-08",
+      "x-details": [
+        {
+          "label": "Advisor",
+          "text": "Prof. Myung-Soo Kim"
+        },
+        {
+          "label": "Thesis",
+          "text": "User Interfaces for Effective Mathematics Education"
+        }
+      ]
+    },
+    {
+      "institution": "Seoul National University",
+      "studyType": "B.S.",
+      "area": "Computer Science and Engineering & Chemical and Biological Engineering",
+      "startDate": "1999-03",
+      "endDate": "2006-08",
+      "x-details": [
+        "Dual Degree Program",
+        "Cum Laude"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "name": "Hoseo University",
+      "position": "Assistant Professor",
+      "startDate": "2025-09",
+      "endDate": null,
+      "highlights": [
+        "Department of Game Software, College of Engineering"
+      ]
+    },
+    {
+      "name": "CELUSoft Inc.",
+      "position": "Founder & CEO",
+      "startDate": "2021-06",
+      "endDate": "2025-08",
+      "highlights": [
+        "Developed Style Commerce AI, a generative AI solution for virtual clothing try-on",
+        "Launched and serviced mobile game Island of Healing (iOS/Android)",
+        "Delivered marathon bib recognition solution powered by AI",
+        "Developed and serviced AI-based camping planner My Hidden Place"
+      ]
+    },
+    {
+      "name": "Magnis Inc.",
+      "position": "Head of Research",
+      "startDate": "2018-12",
+      "endDate": "2020-06",
+      "highlights": [
+        "Developed Tembit, a blockchain-based game asset trading platform",
+        "Hosted hands-on session at UDC 2019: Building Blockchain Games with Tembit"
+      ]
+    },
+    {
+      "name": "Alchera Inc.",
+      "position": "CTO & Co-Founder",
+      "startDate": "2016-06",
+      "endDate": "2018-10",
+      "highlights": [
+        "Delivered AI-based face recognition and 3D sticker solution to NAVER/SNOW",
+        "Developed and launched AR games Yum-Yum-Yum-Yum and Jam-Jam-Jaaam (iOS/Android)",
+        "Developed Animoji technology and Unity plugin delivered to KETI"
+      ]
+    },
+    {
+      "name": "Samsung Electronics Co., Ltd.",
+      "position": "",
+      "startDate": "2011-09",
+      "endDate": "2016-06",
+      "highlights": [
+        {
+          "text": "Senior Engineer / Medical Device Division (2015.01–2016.06)",
+          "children": [
+            "Commercialized RS-80A S-Fusion ultrasound device",
+            "Led S-Fusion project integrating ultrasound with CT/MR for RFA (Project Leader)"
+          ]
+        },
+        {
+          "text": "Research Staff Member / Samsung Advanced Institute of Technology (2011.09–2015.01)",
+          "children": [
+            "Researched Fusion Imaging technology combining ultrasound and CT/MR",
+            "Developed USgHIFU (Ultrasound-guided High Intensity Focused Ultrasound)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Microsoft Research",
+      "position": "Research Intern",
+      "location": "WA, USA",
+      "startDate": "2008-06",
+      "endDate": "2008-09",
+      "highlights": [
+        {
+          "label": "Mentor",
+          "text": "Dr. Ye-Yi Wang"
+        },
+        "Researched DOM Parser for spoken language processing"
+      ]
+    },
+    {
+      "name": "Microsoft Research Asia",
+      "position": "Research Intern",
+      "location": "Beijing, P. R. China",
+      "startDate": "2007-08",
+      "endDate": "2008-02",
+      "highlights": [
+        {
+          "label": "Mentor",
+          "text": "Dr. Ying-Qing Xu"
+        },
+        "Conducted research on motion stylization"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Excellence Award",
+      "date": "2022",
+      "awarder": "Startup Competition by Hanam Urban Innovation Corporation"
+    },
+    {
+      "title": "SEC Annual Award: Gold Award",
+      "date": "2015"
+    },
+    {
+      "title": "Gold Award, Samsung Best Paper Award (First author)",
+      "date": "2014",
+      "summary": "Automatic Fusion Imaging System for Ultrasound-guided Intervention"
+    },
+    {
+      "title": "Seoul Fellowship",
+      "date": "2009"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": [
+        "C",
+        "C++",
+        "C#",
+        "Python",
+        "Java",
+        "JavaScript",
+        "Swift",
+        "Dart",
+        "Lisp"
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "keywords": [
+        "Flutter",
+        "React",
+        "Node.js",
+        "Firebase",
+        "PyTorch"
+      ]
+    },
+    {
+      "name": "Game Engine",
+      "keywords": [
+        "Unity",
+        "Unreal"
+      ]
+    },
+    {
+      "name": "Others",
+      "keywords": [
+        "OpenCV",
+        "OpenGL",
+        "CUDA",
+        "CMake",
+        "Git",
+        "AWS",
+        "Docker",
+        "Typst",
+        "LaTeX"
+      ]
+    },
+    {
+      "name": "Operating Systems",
+      "keywords": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "Android",
+        "iOS"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Chinese",
+      "fluency": "Basic"
+    }
+  ],
+  "x-academic": {
+    "bibliography": {
+      "publications": "data/publications.bib",
+      "patents": "data/patents.bib",
+      "style": "elsevier-with-titles"
+    },
+    "otherPublications": [
+      {
+        "name": "Can the Metaverse Become the Future?",
+        "date": "2023",
+        "publisher": "Weekly ICT Trends, No. 2112, Oct. 2023"
+      },
+      {
+        "name": "Trends and Future of Metaverse Platforms",
+        "date": "2022",
+        "publisher": "Weekly ICT Trends, No. 2045, May 2022"
+      },
+      {
+        "name": "Blockchain Core Technologies and Trends in Electronic Document Services",
+        "date": "2020",
+        "publisher": "Weekly ICT Trends, No. 1955, Jul. 2020"
+      },
+      {
+        "name": "Trends in Next-Generation Augmented Reality Devices",
+        "date": "2019",
+        "publisher": "Weekly ICT Trends, No. 1888, Mar. 2019"
+      },
+      {
+        "name": "Trends in Augmented Reality Technologies",
+        "date": "2018",
+        "publisher": "Weekly ICT Trends, No. 1874, Nov. 2018"
+      }
+    ],
+    "invitedTalks": [
+      {
+        "name": "Can the Metaverse Become the Future?",
+        "date": "Sep. 8, 2023",
+        "venue": "Special Lecture · Dongguk University, Multimedia Software Engineering"
+      },
+      {
+        "name": "Startup Stories from the Field",
+        "date": "Nov. 18, 2022",
+        "venue": "Special Lecture · Gwangju Information & Culture Industry Promotion Agency (AICL)"
+      },
+      {
+        "name": "Startup Stories from the Field",
+        "date": "Nov. 11, 2022",
+        "venue": "Special Lecture · Dongguk University, Multimedia Software Engineering"
+      },
+      {
+        "name": "Convergence Technologies and Startups",
+        "date": "Sep. 16, 2021",
+        "venue": "Special Lecture · Dongguk University, Multimedia Software Engineering"
+      },
+      {
+        "name": "Convergence Technologies and Case Studies",
+        "date": "Apr. 22, 2021",
+        "venue": "Special Lecture · Korea Institute of Startup & Entrepreneurship Development"
+      },
+      {
+        "name": "Blockchain Meets the Game Industry",
+        "date": "May 16, 2019",
+        "venue": "Invited Lecture · Yonsei University, Graduate School of Engineering, Computer Science Seminar"
+      },
+      {
+        "name": "Mobile-Oriented AI-Based Augmented Reality: Practice and Case Studies",
+        "date": "Jul. 10, 2018",
+        "venue": "Invited Talk · Korea Computer Graphics Society (KCGS) Conference"
+      },
+      {
+        "name": "Applications and Practice of AI-Based Virtual Reality",
+        "date": "Dec. 4, 2017",
+        "venue": "Invited Lecture · Electronics and Telecommunications Research Institute (ETRI)"
+      },
+      {
+        "name": "Applications and Practice of AI-Based Virtual Reality",
+        "date": "Nov. 23, 2017",
+        "venue": "Invited Talk · KAIST ARRC"
+      },
+      {
+        "name": "Applications and Practice of AI-Based Virtual Reality",
+        "date": "Nov. 8, 2017",
+        "venue": "Invited Lecture · Kwangwoon University"
+      }
+    ],
+    "activities": [
+      {
+        "name": "Reviewer, TIPS (Tech Incubator Program for Startup) Program",
+        "date": "2025",
+        "organization": "Ministry of SMEs and Startups"
+      },
+      {
+        "name": "Mentor, Software Maestro Program (Cohorts 11–14)",
+        "date": "2020–2024"
+      },
+      {
+        "name": "Reviewer",
+        "date": "2018–2024",
+        "organization": "Institute of Information & Communications Technology Planning & Evaluation (IITP)"
+      },
+      {
+        "name": "Reviewer",
+        "date": "2024",
+        "organization": "Korea Agency for Infrastructure Technology Advancement (KAIA)"
+      },
+      {
+        "name": "Mentor, AI Content Convergence Creation Lab (AICL)",
+        "date": "2022",
+        "organization": "Gwangju Information & Culture Industry Promotion Agency"
+      }
+    ]
+  },
+  "x-typst": {
+    "accent": "#00008B",
+    "continueHeader": true,
+    "contactLayout": "rail",
+    "lastUpdated": true,
+    "preset": "relaxed"
+  }
+}
