@@ -71,6 +71,7 @@
     {
       "name": "Hoseo University",
       "position": "Assistant Professor",
+      "location": "Chungcheongnam-do, Republic of Korea",
       "startDate": "2025-09",
       "endDate": null,
       "highlights": [
@@ -80,6 +81,7 @@
     {
       "name": "CELUSoft Inc.",
       "position": "Founder & CEO",
+      "location": "Seoul, Republic of Korea",
       "startDate": "2021-06",
       "endDate": "2025-08",
       "highlights": [
@@ -92,6 +94,7 @@
     {
       "name": "Magnis Inc.",
       "position": "Head of Research",
+      "location": "Seoul, Republic of Korea",
       "startDate": "2018-12",
       "endDate": "2020-06",
       "highlights": [
@@ -102,6 +105,7 @@
     {
       "name": "Alchera Inc.",
       "position": "CTO & Co-Founder",
+      "location": "Gyeonggi-do, Republic of Korea",
       "startDate": "2016-06",
       "endDate": "2018-10",
       "highlights": [
@@ -111,25 +115,25 @@
       ]
     },
     {
-      "name": "Samsung Electronics Co., Ltd.",
-      "position": "Research Staff Member / Senior Engineer",
-      "startDate": "2011-09",
+      "name": "Medical Device Division, Samsung Electronics Co., Ltd.",
+      "position": "Senior Engineer",
+      "location": "Gyeonggi-do, Republic of Korea",
+      "startDate": "2015-01",
       "endDate": "2016-06",
       "highlights": [
-        {
-          "text": "Senior Engineer / Medical Device Division (2015.01–2016.06)",
-          "children": [
-            "Commercialized RS-80A S-Fusion ultrasound device",
-            "Led S-Fusion project integrating ultrasound with CT/MR for RFA (Project Leader)"
-          ]
-        },
-        {
-          "text": "Research Staff Member / Samsung Advanced Institute of Technology (2011.09–2015.01)",
-          "children": [
-            "Researched Fusion Imaging technology combining ultrasound and CT/MR",
-            "Developed USgHIFU (Ultrasound-guided High Intensity Focused Ultrasound)"
-          ]
-        }
+        "Commercialized RS-80A S-Fusion ultrasound device",
+        "Led S-Fusion project integrating ultrasound with CT/MR for RFA (Project Leader)"
+      ]
+    },
+    {
+      "name": "Samsung Advanced Institute of Technology, Samsung Electronics Co., Ltd.",
+      "position": "Research Staff Member",
+      "location": "Gyeonggi-do, Republic of Korea",
+      "startDate": "2011-09",
+      "endDate": "2015-01",
+      "highlights": [
+        "Researched Fusion Imaging technology combining ultrasound and CT/MR",
+        "Developed USgHIFU (Ultrasound-guided High Intensity Focused Ultrasound)"
       ]
     },
     {
@@ -169,16 +173,19 @@
     },
     {
       "title": "SEC Annual Award: Gold Award",
-      "date": "2015"
+      "date": "2015",
+      "awarder": "Samsung Electronics Co., Ltd."
     },
     {
-      "title": "Gold Award, Samsung Best Paper Award (First author)",
+      "title": "Gold Award, Samsung Best Paper Award",
       "date": "2014",
-      "summary": "Automatic Fusion Imaging System for Ultrasound-guided Intervention"
+      "awarder": "Samsung Electronics Co., Ltd.",
+      "summary": "Paper Title: Automatic Fusion Imaging System for Ultrasound-guided Intervention"
     },
     {
       "title": "Seoul Fellowship",
-      "date": "2009"
+      "date": "2009",
+      "awarder": "Seoul Scholarship Foundation"
     }
   ],
   "skills": [

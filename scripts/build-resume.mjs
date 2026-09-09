@@ -95,7 +95,7 @@ function toJsonResumePublication(e) {
   const container = e.journal || e.booktitle || e.publisher || e.organization || '';
   const authors = cleanLatex(e.author || '');
   const title = cleanLatex(e.title || e.key);
-  const year = cleanLatex(e.year || '');
+  const releaseDate = cleanLatex(e.date || e.year || '');
   const doi = cleanLatex(e.doi || '');
   const url = cleanLatex(e.url || (doi ? `https://doi.org/${doi}` : ''));
   const details = [
@@ -108,7 +108,7 @@ function toJsonResumePublication(e) {
   return {
     name: title,
     publisher: details,
-    releaseDate: year,
+    releaseDate,
     url,
     summary: authors,
     'x-key': e.key,
@@ -119,9 +119,8 @@ function toJsonResumePublication(e) {
 }
 
 function byNewest(a, b) {
-  const ay = Number.parseInt(a.releaseDate || '0', 10) || 0;
-  const by = Number.parseInt(b.releaseDate || '0', 10) || 0;
-  return by - ay || a.name.localeCompare(b.name);
+  return (b.releaseDate || '').localeCompare(a.releaseDate || '')
+    || a.name.localeCompare(b.name);
 }
 
 function flattenHighlights(highlights = []) {
@@ -146,10 +145,14 @@ const publications = parseBibTeX(fs.readFileSync(publicationsBib, 'utf8'))
 
 const patents = parseBibTeX(fs.readFileSync(patentsBib, 'utf8'))
   .map(toJsonResumePublication)
+  .map((patent) => ({
+    ...patent,
+    publisher: ['Patent', patent.publisher].filter(Boolean).join(' · '),
+  }))
   .sort(byNewest);
 
 const resume = structuredClone(base);
-resume.publications = publications;
+resume.publications = [...publications, ...patents];
 resume.work = (resume.work || []).map((job) => ({
   ...job,
   highlights: flattenHighlights(job.highlights),

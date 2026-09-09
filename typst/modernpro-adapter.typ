@@ -132,20 +132,11 @@
 
 #let render-awards(items) = {
   for item in items {
-    let summary = _get(item, "summary")
-    if summary == none {
-      award(
-        award: _content(_get(item, "title", default: "")),
-        institution: _content(_get(item, "awarder")),
-        date: _get(item, "date"),
-      )
-    } else {
-      entry(
-        title: _content(_get(item, "title", default: "")),
-        right: _get(item, "date"),
-        details: [#strong("Title:") #summary],
-      )
-    }
+    award(
+      award: _content(_get(item, "title", default: "")),
+      institution: _content(_get(item, "awarder")),
+      date: _get(item, "date"),
+    )
   }
 }
 
