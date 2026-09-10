@@ -80,7 +80,8 @@
   let address = _get(location, "x-display")
 
   let photo-path = _get(basics, "image")
-  let photo = if photo-path != none and photo-path != "" {
+  let show-picture = _get(cfg, "showPicture", default: true)
+  let photo = if show-picture and photo-path != none and photo-path != "" {
     image(
       photo-path,
       width: 16mm,

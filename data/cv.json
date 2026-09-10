@@ -367,7 +367,11 @@
       }
     ]
   },
+  "x-html": {
+    "showPicture": false
+  },
   "x-typst": {
+    "showPicture": true,
     "accent": "#00008B",
     "continueHeader": true,
     "contactLayout": "rail",

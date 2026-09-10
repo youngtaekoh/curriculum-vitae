@@ -38,13 +38,18 @@ typst compile cv.typ output/cv.pdf
 
 ### Photo
 
-The example keeps the existing photo path (`img/photo.jpg`) but disables it by default so the project compiles without the image. After placing the photo at that path, change:
+The photo path is stored in `basics.image`. Its visibility can be controlled independently for each renderer:
 
 ```json
+"x-html": {
+  "showPicture": false
+},
 "x-typst": {
-  "showPhoto": true
+  "showPicture": true
 }
 ```
+
+Both renderers show the picture by default when `showPicture` is omitted.
 
 ### Korean fallback font
 

@@ -152,6 +152,9 @@ const patents = parseBibTeX(fs.readFileSync(patentsBib, 'utf8'))
   .sort(byNewest);
 
 const resume = structuredClone(base);
+const htmlConfig = resume['x-html'] || {};
+if (htmlConfig.showPicture === false) delete resume.basics.image;
+
 resume.publications = [...publications, ...patents];
 resume.work = (resume.work || []).map((job) => ({
   ...job,
