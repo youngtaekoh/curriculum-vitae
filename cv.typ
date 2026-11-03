@@ -88,7 +88,7 @@
 #render-simple-entries(academic.at("invitedTalks", default: ()), "venue")
 #section-gap
 
-#section("Mentoring & Evaluation Activities")
+#section("Academic & Professional Service")
 #render-simple-entries(academic.at("activities", default: ()), "organization")
 #section-gap
 

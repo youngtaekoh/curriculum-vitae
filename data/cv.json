@@ -342,7 +342,11 @@
     ],
     "activities": [
       {
-        "name": "Reviewer, TIPS (Tech Incubator Program for Startup) Program",
+        "name": "Journal Reviewer, Computers & Graphics (Elsevier)",
+        "date": "2026"
+      },
+      {
+        "name": "Evaluator, TIPS (Tech Incubator Program for Startup) Program",
         "date": "2025",
         "organization": "Ministry of SMEs and Startups"
       },
@@ -351,12 +355,12 @@
         "date": "2020–2024"
       },
       {
-        "name": "Reviewer",
+        "name": "R&D Proposal Reviewer",
         "date": "2018–2024",
         "organization": "Institute of Information & Communications Technology Planning & Evaluation (IITP)"
       },
       {
-        "name": "Reviewer",
+        "name": "R&D Proposal Reviewer",
         "date": "2024",
         "organization": "Korea Agency for Infrastructure Technology Advancement (KAIA)"
       },
